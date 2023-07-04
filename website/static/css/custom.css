@@ -1,0 +1,689 @@
+body {
+    background-color: #F7F7F7
+}
+.logo-med {
+    max-height: 75px;
+    transition: 0.2s
+}
+.logo-small{
+    max-height: 50px;
+    transition: 0.2s
+}
+
+.home-container{
+    padding: 200px 0px 0px 0px;
+    height:100%;
+    width:100%;
+}
+.home-background{
+    height: 100vh;
+    width: 100vw;
+    /* position: absolute; */
+     position: fixed; 
+    z-index: -1;
+    background-image: url("/static/images/corn_bacground.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+   
+}
+
+#nav-container{
+    z-index: 25;
+}
+.nav-container-transparent{
+    position: fixed;
+    width: 100%;
+    padding: 0px 10%;
+    transition: 0.2s;
+
+}
+.nav-container-white{
+    position: fixed;
+    width: 100%;
+    padding: 0px 10%;
+    background-color: white;
+    transition: 0.2s;
+    box-shadow: 0 5px 13px -6px #a3a1a3
+}
+
+.nav-link-med{
+    color: #2D5A27 !important;
+    text-align: center !important;
+    font-size: 2em !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    transition: 0.2s
+    
+}
+
+.nav-link-small{
+    color: #2D5A27 !important;
+    font-size: 1.5em !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    transition: 0.2s
+}
+
+.dropdown-item{
+    color: #2D5A27 !important;
+    font-size: 1.0em !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    transition: 0.2s
+}
+a{
+    color: #2D5A27 !important;
+}
+.dropdown-item:active {
+    background-color: #44653A;
+}
+
+.body-container{
+    padding: 50px 10%;
+}
+
+.font-light{
+    color: white;
+}
+.font-dark{
+    color: black;
+}
+
+
+/*article card*/
+.home-container > div:nth-child(2){
+
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: rgb(255, 255, 255);
+    padding: 5% 5%;
+}
+.home-container > div:nth-child(3){
+    
+  
+    padding: 10px 10% ;
+    margin-top: 10px;
+}
+/*staff card*/
+.home-container > div:nth-child(7){
+
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: rgb(20, 20, 20);
+    /*padding: 5% 10%;*/
+}
+/*purpose card*/
+.home-container > div:nth-child(9){
+
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: rgb(20, 20, 20);
+    /*padding: 5% 10%;*/
+}
+.staff{
+   background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 3% 4%;
+}
+.purpose{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 3% 2%;
+}
+/*.mission-img{
+    padding: 15px;
+    width: 500px;
+}*/
+.staff-img{
+    padding: 15px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+.purpose-img{
+    padding: 15px;
+    width: 500px;
+}
+.content-img{
+    padding: 20px;
+    width: 450px;
+}
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+
+.iframe-slider{
+    width: 100%;
+    height: 65vh;
+
+}
+
+.main-logo{
+    width: 15vw;
+    position: relative; 
+    top:-75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-logo{
+    width: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-container{
+    background-color: rgb(255, 255, 255);
+    padding: 0% 5%;
+}
+.line{
+    border-top: 3px solid green;
+    width: 100%;  
+}
+.motto{
+    text-align: right; 
+    margin: 0;
+}
+
+body > div > div.body-container > div > div:nth-child(2) > div > div:nth-child(1){
+    height: 100px;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.disease{
+    text-align: justify;
+}
+
+
+.form-control:focus {
+    border-color: #618A46;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(97, 138, 70, 0.6);
+}
+
+.message{
+    min-height: 200px !important;
+}
+
+
+.btn-submit {
+    display: block;
+    width: 45%;
+    cursor: pointer;
+    margin-top: 20px !important;
+    margin: auto;
+    color: #FFF;
+}
+
+.contact_title{
+    text-align: center;
+}
+
+.img-left{
+    float: left;
+    margin: 0px 10px 10px 0px;
+    width: 30vw;
+    min-height: 100px;
+    
+}
+
+.img-right{
+    float: right;
+    margin: 0px 10px 0px 10px;
+    width: 30vw;
+    min-height: 100px;
+}
+
+.img-center{
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    width: 40vw;
+    min-height: 100px;
+}
+
+.flea_beetle{
+    width: 20vw;
+    height: 200px;
+}
+
+
+.pests  p {
+    text-align: justify;
+}
+
+.yt-video{
+    width: 100%;
+    max-width: 560px; 
+    max-height: 315px;
+}
+
+.nav-link{
+    
+    padding: 0px;
+}
+
+/* Smartphones */
+@media only screen 
+
+and (max-device-width : 480px) {
+    .body-container{
+        padding: 50px 5% !important;
+    }
+    /* .home-background{
+        display: none;
+    } */
+    .nav-container-white, .nav-container-transparent{
+        padding: 0px !important;
+        background-color: white !important;
+        box-shadow: 0 5px 13px -6px #a3a1a3 !important
+    }
+    .content-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .staff-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .purpose-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .main-logo {
+        width: 30vw;
+    }
+    .footer-logo{
+        padding: 10px 0px !important;
+        width: 90% !important;
+    }
+    .motto{
+        text-align: center; 
+        margin: 0;
+    }
+    .iframe-slider{
+        display: none !important;
+    
+    }
+    .drag-image, .drag-image >div{
+        height: 300px !important;
+        width: 280px !important;
+    }
+    .disease {
+        padding-top: 10px !important;
+    }
+    .img-center, .img-left, .img-right{
+        width: 80vw;
+    }
+    .flea_beetle{
+        height: auto !important;
+    }
+  
+    .home-article{
+        font-size: 1rem !important;
+    }
+    .nav-link{
+        font-size: 1rem !important;
+        padding: 0px;
+    }
+    .dropdown-item{
+        font-size: 1rem !important;
+    }
+
+    H3 {
+        font-size: 1rem !important;
+    }
+
+    H1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+
+/* Tablet Phone */
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 767px) {
+    .body-container{
+        padding: 50px 5% !important;
+    }
+    /* .home-background{
+        display: none;
+    } */
+
+    .nav-container-white, .nav-container-transparent{
+        padding: 0px !important;
+        background-color: white !important;
+        box-shadow: 0 5px 13px -6px #a3a1a3 !important
+    }
+    .content-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .staff-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .purpose-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .main-logo {
+        width: 30vw;
+    }
+    .footer-logo{
+        width: 90% !important;
+        padding: 10px 0px !important;
+    }
+    .motto{
+        text-align: center; 
+        margin: 0;
+    }
+    .iframe-slider{
+        display: none !important; 
+    }
+
+    .disease {
+        padding-top: 10px !important;
+    }
+    .img-center, .img-left, .img-right{
+        width: 80vw;
+    }
+    .flea_beetle{
+        height: auto !important;
+    }
+
+    .home-article{
+        font-size: 1.2rem !important;
+    }
+    .nav-link{
+        font-size: 1.2rem !important;
+    }
+    .dropdown-item{
+        font-size: 1.2rem !important;
+    }
+
+    H3 {
+        font-size: 1.2rem !important;
+    }
+
+    H1 {
+        font-size: 2rem !important;
+    }
+
+}
+
+/* iPads */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 991px) {
+    .body-container{
+        padding: 50px 5% !important;
+    }
+    /* .home-background{
+        display: none;
+    } */
+    .nav-container-white, .nav-container-transparent{
+        padding: 0px !important;
+        background-color: white !important;
+        box-shadow: 0 5px 13px -6px #a3a1a3 !important
+    }
+    .content-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .staff-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .purpose-img{
+        padding: 10px 0px !important;
+        width: 100% !important;
+    }
+    .main-logo {
+        width: 30vw;
+    }
+    .footer-logo{
+        width: 90% !important;
+        padding: 10px 0px !important;
+    }
+    .motto{
+        text-align: center; 
+        margin: 0;
+    }
+    .body-container{
+    padding: 50px 10%;
+    }
+    
+    .carousel {
+        display: none;
+    }
+    .disease {
+        padding-top: 10px !important;
+    }
+    .img-center, .img-left, .img-right{
+        width: 42vw;
+    }
+    .flea_beetle{
+        height: auto !important;
+    }
+
+    .home-article{
+        font-size: 2rem !important;
+    }
+    .nav-link{
+        font-size: 2rem !important;
+    }
+    .dropdown-item{
+        font-size: 2em !important;
+    }
+
+    H3 {
+        font-size: 2rem !important;
+    }
+
+    H1 {
+        font-size: 3rem !important;
+    }
+}
+
+
+/* Desktops and Laptops */
+@media only screen 
+and (min-width : 992px) {
+    .carousel {
+        display: none;
+    }
+    .img-center, .img-left, .img-right{
+        width: 30vw;
+    }
+}
+/* Large Screens */
+@media only screen 
+and (min-width : 1824px) {
+    .carousel {
+        display: none;
+    }
+    .img-center, .img-left, .img-right{
+        width: 30vw;
+    }
+    
+}
+
+/* Detect Page */
+.detect-preview{
+    
+    width: 100%;
+    height: 40vh;
+}
+.detect-image{
+    display:none;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.form-input input {
+    display:none;
+  }
+
+  .btn-upload {
+    margin-top: 20px !important;
+    display:block;
+    width:45%;
+    cursor:pointer;
+    margin: auto;
+    color: #FFF;
+  }
+
+  .min-height-body{
+    min-height: 100vh;
+  }
+  
+  .btn-analyze{
+    display:block;
+    width:45%;
+    cursor:pointer;
+    margin-top: 20px !important;
+    margin:  auto ;
+   
+    color: #FFF;
+  }
+  
+  .btn{
+    background-color: #d81919; 
+  }
+  .btn:hover{
+    background-color: #6e1717 !important;
+    color: #FFF !important;
+  }
+ 
+
+
+  /* Drag and Drop file css */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.drag-image{
+  border: 1px dashed #57781D;
+  height: 300px;
+  width: auto;
+  max-width: 350px;
+  border-radius: 5px;
+  font-weight:400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin: auto;
+}
+.drag-image >div{
+    position: absolute;
+    /* border: 1px dashed #57781D; */
+    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+    font-weight:400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .5);;
+    margin: auto;
+}
+
+.prev-image{
+    border: 1px dashed #57781D;
+    height: 300px;
+    width: 350px;
+    border-radius: 5px;
+    font-weight:400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    margin: auto;
+  }
+
+.drag-image.active{
+  border: 2px solid #000;
+}
+.drag-image > div > .icon{
+  font-size: 30px;
+  color: #000;
+}
+.drag-image > div > h6{
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+.drag-image > div > span{
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  margin: 10px 0 15px 0;
+}
+
+
+.drag-image > div >  button{
+  padding: 10px 25px;
+  font-size: 14px; 
+  font-weight: 300;
+  border: none;
+  outline: none;
+  background:#57781D;
+  color: #fff;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  transition:all 0.5s;
+}
+
+.drag-image > div > button:hover{
+    background-color:#44653A;
+    color:#fff;
+}
+
+.drag-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.overlayCSS{
+    
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+    z-index: 500;
+    }
+
+    .overlay-box {
+        position:absolute;
+        top:50%;
+        left:50%;
+        color: #618A46; 
+        z-index: 1001;
+    }

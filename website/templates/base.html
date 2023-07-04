@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MAIZELife</title>
+        <link rel="icon" href="\static\images\Logo.png" type="image/icon type">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> -->
+        <script src="static\js\custom.js"></script>
+        {%if name == 'Home' %}
+          <script src="static\js\home.js"></script>
+        {%elif name == 'Detect' %}
+          <script src="static\js\detect.js"></script>
+        {% endif %}
+        <link rel="stylesheet" href="static\css\custom.css">
+ 
+    </head>
+    <body class="d-flex flex-column min-height-body" >
+      <div class="wrapper flex-grow-1 background-img">
+        <div class="home-background">
+          
+        </div>
+        <!-- <img src="/static/images/corn_bacground.jpg" class="home-background"   title="home background"/> -->
+      
+   
+    
+        <div class="main-container">
+          <div id="nav-container" class="nav-container-transparent">
+            <nav id = "nav" class="navbar navbar-expand-lg  navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/"><img src="\static\images\Logo.png" class="logo-med" alt="MAIZE Life"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active nav-link-med" aria-current="page" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-link-med" href="/detect">Detect</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link-med" href="#" role="button" data-bs-toggle="dropdown">Library</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="planting_teq">PLANTING TECHINIQUES </a></li>
+                          <li><a class="dropdown-item" href="diseases">CORN DISEASES</a></li>
+                          <li><a class="dropdown-item" href="pests">PESTS OF CORN</a></li>
+                        </ul>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link nav-link-med" href="#">Library</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link nav-link-med" href="contact_us">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </div>
+          <div class="body-container">
+            {%block content%}
+            
+            {%endblock%}
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+
+      <footer id="main-footer">
+        <div class="card rounded-0 footer-container">
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-sm-4">
+                  <img src="\static\images\Logo1.png" class="footer-logo" title="Maizelife"/>
+              </div>
+
+              <div class="col-sm-8" style="align-self: center;">
+                  <h3>
+                    <p class="motto"><strong>Optimizing corn field crops for the future</strong></p>
+                  </h3>
+              </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+              <div class="line"></div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-sm-4">
+                <h3>
+                  <p><strong>AGENCIES</strong></p>
+                </h3>
+
+                <h5>
+                  <ul>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://acpc.gov.ph/">Agricutural Credit Policy Council</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://fpa.da.gov.ph/NW/index.php">Fertilizer and Pesticide Autority</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://nfrdi.da.gov.ph/">National Fisheries Research and Developmental Institute</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://nmis.gov.ph/">National Meat Inspection Service</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.pcc.gov.ph/">Philippine Carabao Center</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.philmech.gov.ph/">Philippine Center for Postharvest Developmental and Machanization</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="http://www.pcaf.da.gov.ph/">Philippine Councit for Agriculture and Fisheries</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://philfida.da.gov.ph/">Philippine Fiber Industry Developmental Inductry</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="http://prri.da.gov.ph/">Philippine Rubber Research</a></li>
+                  </ul>
+                </h5>
+              </div>
+
+              <div class="col-sm-4">
+                <h3>
+                  <p><strong>BUREAUS</strong></p>
+                </h3>
+
+                <h5>
+                  <ul>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://ati2.da.gov.ph/ati-main/content/">Agricultural Training Institute</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://bar.gov.ph/">Bureau of Agricutural Research</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="http://bafe.da.gov.ph/">Bureau of Agricutural and Fisheries Engineering</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://bafs.da.gov.ph/">Bureau of Agricutural and Fisheries Standards</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.bai.gov.ph/">Bureau of Animal Industry</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.bfar.da.gov.ph/">Bureau of Fisheries and Aquatic Resources</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.buplant.da.gov.ph/">Bureau of Plant Industry</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="http://bswm.da.gov.ph/">Bureau of Solids and Water Management</a></li>
+                  </ul>
+                </h5>
+
+              </div>
+
+              <div class="col-sm-4">
+                <h3>
+                  <p><strong>CORPORATIONS</strong></p>
+                </h3>
+
+                <h5>
+                  <ul>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://nda.da.gov.ph/en/">National Dairy Authority</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://nfa.gov.ph/">National Food Authority</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.nta.da.gov.ph/">National Tabacco Administration</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://pca.gov.ph/">Philippine Coconut Authority</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://pcic.gov.ph/">Philippine Crop Insurance Corporation</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://pfda.gov.ph/">Philippine Fisheries Developmental Autority</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.philrice.gov.ph/">Philippine Rice Research Institute</a></li>
+                    <li style=" list-style-type: none;"><a style=" text-decoration: none;" href="https://www.sra.gov.ph/">Sugar Regulatory Adminstration</a></li>
+                  </ul>
+                </h5>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+      <footer id="main-footer" class="bg-dark text-center text-white">
+        <!-- Grid container -->
+       
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 
+          <a class="text-white"  style=" text-decoration: none;" href="/">MAIZELife </a>
+          | All Right Reserved.
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    </body>
+    
+
+    
+</html>

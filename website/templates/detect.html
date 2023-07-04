@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}TEST{% endblock %}
+{%block content%}
+
+<div class="container-fluid home-container">
+    <div>
+        <div class="card">
+            <div id="loading" class="overlayCSS">
+                <div class="spinner-border overlay-box" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            </div>
+            <div class="card-body">
+                
+                
+                <div class="row">
+                    <div class="col col-12 ">
+                        <H3>
+                            Please upload Image below to determine the disease of your corn.
+                        </H3>
+                        
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="form-input ">
+                            <!-- <div class="preview detect-preview">
+                                <img id="image" class="detect-image">
+                            </div> -->
+                            
+                            <!-- <input id="corn_image" name="corn_image" type="file" name="corn_image"> -->
+
+                            <div class="drag-image">
+                                
+                                <img class="drag-prev-image" hidden/>
+                                <div>
+                                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                    <h6>Drag & Drop File Here</h6>
+                                    <span>OR</span>
+                                    <button id="browse-button">Browse File</button>
+                                    <input id="corn_image" name="corn_image" type="file" hidden>
+                                </div>
+                                
+                            
+                                
+                            </div>
+                            
+                            <!-- <label for="corn_image" class="btn btn-upload">Upload Corn leaf Image</label> -->
+                            <button id="btn_analyze"type="button" class="btn btn-analyze">Analyze</button>
+                        </div>
+                    
+                    </div>
+                    <br/>
+                    <div class="col col-lg-7  col-md-12 col-sm-12 col-12 disease disease-blight" style="display: none">
+                        <h3>Disease: <strong>NORTHERN CORN LEAF BLIGHT</strong></h3>
+                        <H3>
+                            Generally, appear first on the lower leaves but may move higher in the canopy as the disease progresses. Leaf blades, sheaths, and ear husks may show symptoms on susceptible hybrids.
+                            Early symptoms appear as long, narrow tan lesions running parallel to the leaf veins. As the disease develops, these narrow lesions will expand to form long, oblong, or “cigar-shaped” tan to gray lesions, which are a diagnostic symptom of NCLB (Figure 1). These cigar-shaped lesions will eventually coalesce over time and may cover a significant portion of the leaf. Under the appropriate conditions, small fungal spores may be produced inside the lesions and appear as tiny black or dark green specks upon observation with a hand lens.
+                            <br/>
+                            <br/>
+                            <a href="/diseases#section-blight"  style=" text-decoration: none;">Learn more >>></a>
+                        </H3>
+                    </div>
+
+                    <div class="col col-lg-7 col-md-12 col-sm-12 col-12 disease disease-gray" style="display: none">
+                        <h3>Disease: <strong>GRAY LEAF SPOT ON CORN</strong></h3>
+                        <H3>
+                            Often first noticed on the lower leaves.  Symptomatic leaves have small, tan, rectangular lesions surrounded with yellow halos, which are not easily distinguished from lesions caused by other foliar pathogens of corn.  Mature lesions are much more diagnostic and easier to distinguish from other common foliar diseases; they are long, grey to tan in color, and rectangular with time lesions can coalesce and form large necrotic areas and decimate the canopy Lesion size and color can vary depending on the corn hybrid.  Under some condition’s lesions may occur on stalks.  These lesions are not rectangular but rather amorphous, with tan or gray centers.
+                            <br/>
+                            <br/>
+                            <a href="/diseases#section-spot"  style=" text-decoration: none;">Learn more >>></a>
+                        </H3>
+                    </div>
+
+                    <div class="col col-lg-7 col-md-12 col-sm-12 col-12 disease disease-rust" style="display: none"> 
+                        <h3>Disease: <strong>COMMON RUST</strong></h3>
+                        <H3>
+                            caused by the fungus Puccinia sorghi. Late occurring infections have limited impact on yield. The fungus overwinters on plants in southern states and airborne spores are wind-blown to northern states during the growing season. Disease development is favored by cool, moist weather (60 – 70◦ F).
+                            <br/>
+                            <br/>
+                            <a href="/diseases#section-rust"  style=" text-decoration: none;">Learn more >>></a>
+                        </H3>
+                    </div>
+                    <div class="col col-lg-7 col-md-12 col-sm-12 col-12 disease disease-none" style="display: none"> 
+                        <h3>Disease: <strong>None</strong></h3>
+                        <H3>
+                        Great! This is a healty corn leaf.
+                        </H3>
+                    </div>
+                    <div class="col col-lg-7 col-md-12 col-sm-12 col-12 disease disease-invalid" style="display: none"> 
+                        <h3>Disease: <strong>N/A</strong></h3>
+                        <H3>
+                        Sorry, cannot detect disease on the uploaded image. Please upload clearer or diferent image. Thank you!
+                        </H3>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

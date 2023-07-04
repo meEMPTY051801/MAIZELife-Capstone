@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}TEST{% endblock %}
+{%block content%}
+
+<div class="container-fluid home-container">
+    <div>
+        
+
+
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-8">
+                <div class="card shadow ">
+                    <div class="card-body">
+                        <div class="row justify-content-md-center">
+                            <div class="col col-lg-12 contact_title">
+                                <H1>
+                                    Contact our team
+                                </H3>
+                                   
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row justify-content-md-center">
+                            <div class="col col-lg-12">
+                                <H3>
+                                    Our team is happy to answer your questions. Fill out the form and we'll be in touch as soon as possible.
+                                </H3>
+                            </div>
+                        </div>
+                        <br/>
+                        {%if showSuccess == True %}
+                        <div class="row justify-content-md-center">
+                            <div class="col col-lg-12">
+                                <div class="alert alert-success alert-dismissible" role="alert">
+                                    <strong>Thank you for getting in touch! </strong> We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <form action="/contact_us" method="post">
+                            <div class="mb-3">
+                              <label for="first_name" class="form-label">First Name</label>
+                              <input type="text" class="form-control" id="first_name" name="first_name" aria-describedby="first_name_help" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="last_name" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" aria-describedby="last_name_help" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="last_name" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="email_help" required>
+                                <div id="last_name_help" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your message to Us</label>
+                                <textarea type="text" class="form-control message" id="message" name="message" required> </textarea>    
+                                
+                            </div>
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        
+    </div>
+</div>
+{%endblock%}

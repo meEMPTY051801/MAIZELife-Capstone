@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+{% block title %}TEST{% endblock %}
+{%block content%}
+
+<div class="container-fluid home-container">
+  <div>
+   
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <img src="\static\images\Main_Logo1.png" class="main-logo" title="Maizelife"/>
+        </div>
+      </div>
+      <div class="row">
+        <!--<div class="col font-light">-->
+        <div class="col font-dark">
+          <H3>
+            <div class="float-right">
+              <img class="content-img" src="\static\images\article_corn1.jpg"/>
+            </div>
+
+            <br/>
+
+            <article class="home-article" style="text-align:justify">
+              Corn is one of the most important staple crops in the Philippines. It ranks second to rice in the utilization of agricultural resources. The need for corn commodities continues to increase from year to year both as main food ingredient, animal feed and as raw material of large-scale industry (manufacturer) to small scale (household). Various efforts have been made to increase national corn production, among others, by the creation and research of improved varieties, superior quality seed assistance, expansion of planting areas, and extension.
+        
+            </article>
+            <div class="float-left">
+              <img class="content-img" src="\static\images\article_corn2.jpg"/>
+            </div>
+
+            <br/>
+            <br/>
+
+            <article class="home-article" style="text-align:justify">
+              However, in the process of planting farmers there are several obstacles, namely the occurrence of climate changes that result in the intensity of pests and diseases, and the lack of agricultural extension workers. In addressing the problem of disease attack on corn plants, planting farmers as the parties directly related need to know the information quickly and accurately related types of diseases that attack corn plants.
+            </article>
+              <br/>
+              <br/>
+          </H3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <iframe src="/static/html/slider.html" class="iframe-slider card" name="slider" title="home-slider">
+    </iframe>
+
+
+    <div id="carousel_corn" class="carousel slide card" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel_corn" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel_corn" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel_corn" data-bs-slide-to="2"></button>
+      </div>
+    
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="\static\images\corn-blight.jpg" alt="Corn Blight" class="d-block w-100">
+          <div class="carousel-caption">
+            <h3>Corn Blight</h3>
+            <p>Large spots on corn leaves.  <a href="/diseases#section-blight" style="color: white">learn more</a> </p>
+           
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="\static\images\common-rust_2.jpg" alt="Common Rust" class="d-block w-100">
+          <div class="carousel-caption">
+            <h3>Common Rust</h3>
+            <p>Brownish-red oblong pustules on leaves <a href="/diseases#section-rust" style="color: white">learn more</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="\static\images\gray-leaf.jpg" alt="Grey Leaf" class="d-block w-100">
+          <div class="carousel-caption">
+
+          <h3>Gray Leaf Spot</h3>
+            <p>Small, necrotic spots with halos.<a href="/diseases#section-spot" style="color: white">learn more</a></p>
+            </div>
+        </div>
+      </div>
+    
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel_corn" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel_corn" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div> 
+
+
+    <br/>
+
+    <!--<div class="card mission">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+
+            <div class="float-left">
+              <img class="mission-img" src="\static\images\mission.jpg"/>
+            </div>
+
+            <br/>
+            <br/>
+
+            <H1>
+              <strong>Our Mission</strong>
+            </H1>
+            <br/>
+            <H3>
+              <article class="home-article" style="text-align:justify">
+                To be able to determine the corn disease and provide the corn farmer a very accurate solution as soon as possible to increase the productivity, profitability, accessible and affordable food for every Filipino and a decent income for all while protecting the environment. 
+              </article>
+            </H3>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="card staff">
+      <div class="card-body">
+
+        <div class="row">
+          <div class="col">
+            <h1 style="text-align:center">
+              <p><strong>OUR TEAM</strong></p>
+            </h1>
+
+            <h3 style="text-align:center">
+              We're led by a team who constantly questions. tinkers, and challenges to unlock great creativity around every turn.
+            </h3>
+          </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+          <div class="line"></div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="row">
+
+          <div class="col-sm-3">
+
+            <div>
+              <img class="staff-img" src="\static\images\jv.jpg"/>
+            </div>
+
+            <h2 style="text-align:center">
+              <p><strong>Vincent</strong></p>
+            </h2>
+
+            <h3 style="text-align:center">
+              Back End Developer
+            </h3>
+
+            <br/>
+
+            <h3 style="text-align:center">
+              " Every Mistake is A lesson "
+            </h3>
+          </div>
+
+          <div class="col-sm-3">
+
+            <div>
+              <img class="staff-img" src="\static\images\Nino.jpg"/>
+            </div>
+
+            <h2 style="text-align:center">
+              <p><strong>Niño</strong></p>
+            </h2>
+
+            <h3 style="text-align:center">
+              Project Manager
+            </h3>
+
+            <br/>
+
+            <h3 style="text-align:center">
+              " Everyone starts from zero. if you messed up, just try it, figure out why and try again. "
+            </h3>
+
+          </div>
+
+          <div class="col-sm-3">
+
+            <div>
+              <img class="staff-img" src="\static\images\jc.jpg"/>
+            </div>
+
+            <h2 style="text-align:center">
+              <p><strong>Cyrelle</strong></p>
+            </h2>
+
+            <h3 style="text-align:center">
+              Business Manager
+            </h3>
+
+            <br/>
+
+            <h3  style="text-align:center">
+              "When I decided to follow my dream I had already discarted my life."
+            </h3>
+
+          </div>
+
+          <div class="col-sm-3">
+
+            <div>
+              <img class="staff-img" src="\static\images\tano.png"/>
+            </div>
+
+            <h2 style="text-align:center">
+              <p><strong>Christian</strong></p>
+            </h2>
+
+            <h3 style="text-align:center">
+              Front End Developer
+            </h3>
+
+            <br/>
+
+            <h3  style="text-align:center">
+              " Life Simple. You make choices and you don't look back. "
+            </h3>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+    <br/>
+
+    <div class="card purpose">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+
+            <div class="float-left">
+              <img class="purpose-img" src="\static\images\Main_Logo2.png"/>
+            </div>
+
+            <br/>
+
+            <H1 style="text-align:center">
+              <strong>OUR PURPOSE</strong>
+            </H1>
+
+            <br/>
+
+            <H3>
+              <article class="home-article" style="text-align:justify">
+                We're optimistic for a future where people live healthier, more informed, more creative lives. We see a world where technology enhances human potential, and takes us into a new era of intelligence and progress that everyone can benefit from.
+              </article>
+            </H3>
+
+            <br/>
+
+            <H3 style="text-align:center">
+              <strong>We let innovators create the next breakthroughs in machine intelligence.</strong>
+            </H3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+{%endblock%}
+
+
